@@ -1,0 +1,111 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #262b35;
+  color: #e2e2e2;
+}
+
+.design {
+  position: relative;
+  overflow: hidden;
+  padding: 22px 0 50px;
+}
+
+.design:after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #1c1c1c;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  top: -60%;
+  right: -20%;
+}
+
+.design2 {
+  position: relative;
+  overflow: hidden;
+  /* padding: 22px 0 50px; */
+}
+
+.design2:after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: #1c1c1c;
+  border-radius: 50%;
+  z-index: -1;
+  bottom: -40%;
+  left: -20%;
+}
+
+.over_all {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.table_container::-webkit-scrollbar {
+  width: 0em;
+  height: 0em;
+}
+
+.table_container::-webkit-scrollbar-button {
+  background: #ccc;
+}
+
+.table_container::-webkit-scrollbar-track-piece {
+  background: #888;
+}
+.table_container::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+.info {
+  font-size: 1.2rem;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+hanko-auth::part(form-item) {
+  min-width: 100%;
+  --background-color: transparent;
+}
+
+hanko-auth::part(container) {
+  --background-color: transparent;
+  --color: #e2e2e2;
+}
+
+hanko-auth::part(input) {
+  --background-color: #292929;
+  --border-radius: 7px;
+}
+
+hanko-auth::part(button) {
+  --background-color: #e2e2e2;
+  --color: #292929;
+  --border-radius: 7px;
+}
+
+hanko-auth::part(primary-button) {
+  --background-color: #e2e2e2;
+  --color: #292929;
+}
+
+.loginScreen {
+  margin: 10vh 10px 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
